@@ -1,0 +1,16 @@
+# R Studio Connections ----------------------------------------------------
+##https://support.rstudio.com/hc/en-us/articles/115010915687
+devtools::install_github("r-dbi/odbc")
+
+# Log in to Git -----------------------------------------------------------
+# install.packages("usethis")
+library(usethis)
+use_git_config(user.name = "CassStevenson", 
+               user.email = "cjsteven@ualberta.ca")
+
+# install.packages("gitcreds")
+library(gitcreds)
+gitcreds::gitcreds_set()
+
+usethis::create_github_token()
+
