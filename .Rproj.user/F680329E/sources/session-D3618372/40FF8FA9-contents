@@ -1,0 +1,13 @@
+
+devtools::install_github("r-dbi/odbc")
+
+# install.packages("usethis")
+library(usethis)
+use_git_config(user.name = "CassStevenson", 
+               user.email = "cjsteven@ualberta.ca")
+
+# install.packages("gitcreds")
+library(gitcreds)
+gitcreds::gitcreds_set()
+
+usethis::create_github_token()
